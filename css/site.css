@@ -1,0 +1,77 @@
+html {
+  --scarlet: #f72210;
+  --porcelain: #f4f5f6;
+  --alto: #d9d9d9;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: var(--porcelain);
+}
+
+.header {
+  font: 16px/34px "Roboto Condensed", sans-serif;
+  padding: 1.4rem 1rem 0 3.1rem;
+  color: #fff;
+  height: 9.5rem;
+  background-color: var(--scarlet);
+}
+
+.brand svg {
+  fill: #fff;
+}
+
+.btn-subscribe {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--scarlet);
+  width: 16.1rem;
+  height: 2.8rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 0;
+}
+
+.link-sign-in {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bg-light {
+  background: #fff;
+}
+
+.navbar {
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.nav-item a {
+  color: #000;
+}
+
+.nav-item a:hover {
+  color: var(--scarlet);
+  text-decoration: none;
+}
+
+.navbar li:nth-child(n+2) {
+  border-left: 1px solid var(--alto);
+}
+
+.navbar li:last-child {
+  color: var(--porcelan);
+}
+
+.pad-25 {
+  padding-left: 2.4rem;
+  padding-right: 2.5rem;
+}
+
