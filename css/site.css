@@ -2,11 +2,12 @@ html {
   --scarlet: #f72210;
   --porcelain: #f4f5f6;
   --alto: #d9d9d9;
+
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: var(--porcelain);
 }
 
