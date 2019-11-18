@@ -168,6 +168,7 @@ h2 a:hover {
 .btn-subscribe:hover {
   color: var(--scarlet);
 }
+
 .link-sign-in {
   font-size: 1.8rem;
   text-decoration: none;
@@ -186,6 +187,7 @@ h2 a:hover {
   position: relative;
   width: 16.6rem;
 }
+
 .category {
   display: block;
   font: bold 17px/16px "Roboto Condensed", sans-serif;
