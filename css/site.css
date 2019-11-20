@@ -257,12 +257,26 @@ h2 {
   color: var(--dodger-blue);
 }
 
+.icon-s,
 .icon-n {
   display: block;
-  width: 29px;
-  height: 28px;
+  position: relative;
+  width: 2.9rem;
+  height: 2.8rem;
   background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
-  margin-right: 10px;
+  margin-right: 1rem;
+}
+
+.icon-s::after {
+  border-bottom: 0.3rem solid red;
+  border-right: 0.3rem solid red;
+  display: block;
+  content: "";
+  width: 2.6rem;
+  height: 2.5rem;
+  position: absolute;
+  bottom: -0.4rem;
+  right: -0.4rem;
 }
 
 .btn-text {
@@ -363,9 +377,18 @@ h2 {
   font: bold 17px/16px "Roboto Condensed", sans-serif;
 }
 
-.lk {
+.count-link {
+  width: 7rem;
+  height: 5.2rem;
   display: block;
-  background-color: #f4f5f6;
-  color: black;
-  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 5.8rem;
+  text-indent: 0.5rem;
+  text-align: center;
+  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+  color: #e9212e;
 }
