@@ -86,9 +86,11 @@ a {
 h2 a:hover {
   display: inline-block;
   text-decoration: none;
-  line-height: 1.6rem;
-  border-bottom: 2px solid var(--scarlet);
   color: black;
+}
+
+a.red-title:hover {
+  color: var(--scarlet);
 }
 
 .nav a:hover {
@@ -102,6 +104,7 @@ h2 a:hover {
 
 h1,
 h3,
+h2,
 h4,
 h5,
 h6 {
@@ -109,14 +112,6 @@ h6 {
   margin-bottom: 1rem;
   position: relative;
   color: black;
-}
-
-h2 {
-  font-family: "Roboto Condensed", sans-serif;
-  margin-bottom: 1rem;
-  position: relative;
-  color: black;
-  font-weight: bold;
 }
 
 .header {
@@ -391,4 +386,8 @@ h2 {
   text-align: center;
   background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
   color: #e9212e;
+}
+
+.red-title {
+  color: var(--scarlet);
 }
