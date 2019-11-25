@@ -406,11 +406,6 @@ h6 {
   color: var(--scarlet);
 }
 
-.footer,
-.footer a {
-  color: #666;
-}
-
 .footer a:hover {
   color: #000;
   text-decoration: none;
@@ -418,4 +413,9 @@ h6 {
 
 .footer nav a::after {
   content: " |";
+}
+
+.footer,
+.footer a {
+  color: #666;
 }
