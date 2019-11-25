@@ -83,6 +83,11 @@ a {
   border-top: 13px solid #f72210;
 }
 
+.footer,
+.footer a {
+  color: #666;
+}
+
 h2 a:hover {
   display: inline-block;
   text-decoration: none;
@@ -413,9 +418,4 @@ h6 {
 
 .footer nav a::after {
   content: " |";
-}
-
-.footer,
-.footer a {
-  color: #666;
 }
