@@ -71,7 +71,7 @@ a {
   background-color: white;
 }
 
-.nav::before {
+.nav-red-tab::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -81,6 +81,11 @@ a {
   background-color: #f72210;
   border-left: 12px solid #fff;
   border-top: 13px solid #f72210;
+}
+
+.footer,
+.footer a {
+  color: #666;
 }
 
 h2 a:hover {
@@ -125,6 +130,11 @@ h6 {
   position: relative;
 }
 
+.footer {
+  max-width: 131rem;
+  margin: 0 auto;
+}
+
 .brand {
   position: absolute;
   left: 50%;
@@ -135,6 +145,11 @@ h6 {
   height: 6rem;
   width: 39.6rem;
   fill: #fff;
+}
+
+.brand-footer svg {
+  height: 3.6rem;
+  fill: var(--scarlet);
 }
 
 .genericon-menu {
@@ -280,6 +295,10 @@ h6 {
   color: #fff;
 }
 
+.bg-scarlet {
+  background-color: var(--scarlet);
+}
+
 .byline {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
@@ -390,4 +409,13 @@ h6 {
 
 .red-title {
   color: var(--scarlet);
+}
+
+.footer a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer nav a::after {
+  content: " |";
 }
