@@ -416,6 +416,13 @@ h6 {
   text-decoration: none;
 }
 
+
 .footer nav a::after {
   content: " |";
+}
+
+@media (max-width: 768px) {
+  .footer nav a::after {
+    content: "";
+  }
 }
