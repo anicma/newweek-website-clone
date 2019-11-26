@@ -416,7 +416,6 @@ h6 {
   text-decoration: none;
 }
 
-
 .footer nav a::after {
   content: " |";
 }
