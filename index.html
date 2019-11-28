@@ -1,18 +1,2056 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+    <style>
+      @font-face {
+        font-family: "Roboto Condensed";
+        font-display: swap;
+        src: local("roboto_condensedbold"),
+          url(https://g.newsweek.com/www/fonts/robotocondensed-bold-webfont.woff2)
+            format("woff2"),
+          url(https://g.newsweek.com/www/fonts/robotocondensed-bold-webfont.woff)
+            format("woff");
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Roboto Condensed";
+        font-display: swap;
+        src: local("roboto_condensedregular"),
+          url(https://g.newsweek.com/www/fonts/robotocondensed-regular-webfont.woff2)
+            format("woff2"),
+          url(https://g.newsweek.com/www/fonts/robotocondensed-regular-webfont.woff)
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Roboto Condensed";
+        font-display: swap;
+        src: local("roboto_condensedlight"),
+          url(https://g.newsweek.com/www/fonts/robotocondensed-light-webfont.woff2)
+            format("woff2"),
+          url(https://g.newsweek.com/www/fonts/robotocondensed-light-webfont.woff)
+            format("woff");
+        font-weight: 300;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Playfair Display";
+        font-display: swap;
+        src: local("playfair_displayregular"),
+          url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.eot);
+        font-display: swap;
+        src: url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.woff2)
+            format("woff2"),
+          url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.woff)
+            format("woff"),
+          url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.ttf)
+            format("truetype"),
+          url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.svg#playfair_displayregular)
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Farro";
+        font-display: swap;
+        src: local("farromedium"),
+          url(https://g.newsweek.com/www/fonts/farro-medium-webfont.woff2)
+            format("woff2"),
+          url(https://g.newsweek.com/www/fonts/farro-medium-webfont.woff)
+            format("woff");
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Lora";
+        font-display: swap;
+        src: local("loraregular"),
+          url(https://g.newsweek.com/www/fonts/lora-regular-webfont.woff2)
+            format("woff2"),
+          url(https://g.newsweek.com/www/fonts/lora-regular-webfont.woff)
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="css/site.css" />
   </head>
   <body>
+    <header class="header pb-3 pb-lg-4">
+      <a class="brand" href="#">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 395.6 60"
+          xml:space="preserve">
+          <path
+            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+          ></path>
+        </svg>
+      </a>
+      <div class="h-100 d-flex justify-content-between align-items-end">
+        <div class="text-nowrap">
+          <span class="d-none d-lg-block">
+            Tue, Oct 22, 2019
+          </span>
+        </div>
+        <div class="text-nowrap w-100 text-right">
+          <div class="align-text-bottom">
+            <a class="link-sign-in text-uppercase font-weight-bold text-white px-xs-0 px-md-4"
+              href="#">
+              sign in
+            </a>
+            <button
+              class="btn btn-subscribe rounded-0 text-uppercase py-0 px-4">
+              subscribe
+              <svg
+                class="ml-3 d-none d-md-inline-block"
+                width="10px"
+                height="20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 8 14"
+                style="enable-background:new 0 0 8 14;fill: red;"
+                xml:space="preserve">
+                <polygon
+                  points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7"
+                ></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="d-block d-lg-none genericon genericon-menu h-100">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <nav class="nav nav-red-tab navbar-expand-lg navbar-light bg-white mb-1">
+      <div class="nav p-4 justify-content-between collapse navbar-collapse">
+        <a href="">U.S.</a>
+        <a href="">World</a>
+        <a href="">Business</a>
+        <a href="">Tech & Science</a>
+        <a href="">Culture</a>
+        <a href="">Newsgeek</a>
+        <a href="">Sport</a>
+        <a href="">Health</a>
+        <a href="">Opinion</a>
+        <a href="">Vantage</a>
+        <div class="search-box">
+          <input class="border-0 w-50" type="text" placeholder="Search" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <main class="main container bg-white pt-4 px-5">
+      <div class="row">
+        <div class="col-md-5 col-lg order-2 order-md-1">
+          <div class="block-title text-uppercase">featured stories</div>
+          <article class="mb-4">
+            <div class="wrap">
+              <div class="category"><a href="/world">World</a></div>
+              <div>
+                <a href="#">
+                  <img
+                    class="w-100 img-fluid lazysize lazyloaded"
+                    alt="news"
+                    title="news"
+                    src="img/img-397x265.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="#">Netflix Rolling Out 43 Original Programs in November Amid Stock
+                Market Dip</a>
+            </h2>
+            <div class="summary">
+              On Wednesday, Netflix has announced it will be rolling out 43 of
+              its original programs in November, an announcement that comes amid
+              the company's slightly decreasing stock value.
+            </div>
+          </article>
+          <!-- end article -->
+          <article class="mb-4">
+            <div class="wrap">
+              <div class="category"><a href="/world">World</a></div>
+              <div>
+                <a href="#">
+                  <img
+                    class="w-100 img-fluid lazysize lazyloaded"
+                    alt="news"
+                    title="news"
+                    src="img/img-397x265.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="#">
+                Netflix Rolling Out 43 Original Programs in November Amid Stock Market Dip
+              </a>
+            </h2>
+            <div class="summary">
+              On Wednesday, Netflix has announced it will be rolling out 43 of
+              its original programs in November, an announcement that comes amid
+              the company's slightly decreasing stock value.
+            </div>
+          </article>
+          <article class="mb-4">
+            <div class="wrap">
+              <div class="category"><a href="/world">World</a></div>
+              <div>
+                <a href="#">
+                  <img
+                    class="w-100 img-fluid lazysize lazyloaded"
+                    alt="news"
+                    title="news"
+                    src="img/img-397x265.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="#">
+                Netflix Rolling Out 43 Original Programs in November Amid Stock
+                Market Dip</a>
+            </h2>
+            <div class="summary">
+              On Wednesday, Netflix has announced it will be rolling out 43 of
+              its original programs in November, an announcement that comes amid
+              the company's slightly decreasing stock value.
+            </div>
+          </article>
+
+          <article class="my-5">
+            <h3 class="pl-3 text-uppercase category-title font-weight-bold">
+              sponsored insight
+            </h3>
+            <div class="card p-2 pt-3">
+              <div class="card-body">
+                <h2>
+                  <a class="font-weight-bold" href="#">
+                    EQUIS Accredited Business Schools 2019
+                  </a>
+                </h2>
+                <p class="">
+                  It is important to check whether a school is accredited by a
+                  credible global accreditation body and meets internationally
+                  agreed quality standards. EQUIS gives you that piece of mind.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="my-5">
+            <h3 class="pl-3 text-uppercase category-title font-weight-bold">
+              sponsored insight
+            </h3>
+            <div class="card p-2 pt-3">
+              <div class="card-body">
+                <h2>
+                  <a class="font-weight-bold" href="#">
+                    EQUIS Accredited Business Schools 2019
+                  </a>
+                </h2>
+                <p class="">
+                  It is important to check whether a school is accredited by a
+                  credible global accreditation body and meets internationally
+                  agreed quality standards. EQUIS gives you that piece of mind.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="my-5">
+            <h3 class="pl-3 text-uppercase category-title font-weight-bold">
+              sponsored insight
+            </h3>
+            <div class="card p-2 pt-3">
+              <div class="card-body">
+                <h2>
+                  <a class="font-weight-bold" href="#">EQUIS Accredited Business Schools 2019</a>
+                </h2>
+                <p class="">
+                  It is important to check whether a school is accredited by a
+                  credible global accreditation body and meets internationally
+                  agreed quality standards. EQUIS gives you that piece of mind.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- end left-section -->
+
+        <div class="order-1 order-md-2 col-xs-12 col-sm-12 col-md-7 col-lg-5">
+          <div class="block-title text-uppercase">top story</div>
+          <div class="d-flex flex-column">
+            <article class="order-1 order-md-1">
+              <div class="wrap">
+                <div class="category"><a href="#">Politics</a></div>
+                <div>
+                  <a href="#">
+                    <picture class="lazysize">
+                      <img
+                        class="w-100 img-fluid lazysize lazyloaded"
+                        alt="news"
+                        title="news"
+                        src="img/img-591x364.jpg"
+                      />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <h3 class="font-weight-bold">
+                <a href="#">Impeachment Testimony Stalled After GOP Tries to Access
+                  Secure Room
+                </a>
+              </h3>
+              <div class="summary">
+                On Wednesday, Netflix has announced it will be rolling out 43 of
+                its original programs in November, an announcement that comes
+                amid the company's slightly decreasing stock value.
+              </div>
+            </article>
+            <!-- end top story -->
+
+            <article
+              class="order-3 order-md-2 second-story mt-4 mb-2 py-3 px-3 bg-porcelain"
+            >
+              <div class="block-title text-uppercase">featured stories</div>
+              <div class="row mb-1">
+                <div class="col-xs-12 col-md-6 mb-4">
+                  <div class="wrap">
+                    <div>
+                      <a href="#">
+                        <picture class="mapping-mobile lazysize">
+                          <img
+                            class="w-100 mapping-mobile lazysize lazyload img-fluid"
+                            src="img/img-591x364.jpg"
+                            alt="Hong Kong Victoria Harbor"
+                            title="Hong Kong Victoria Harbor"
+                          />
+                        </picture>
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="serif-title">
+                    Is It Safe to Travel to Hong Kong During Protests? Here's
+                    What to Consider
+                  </h3>
+                  <div class="summary">
+                    A drop in tourism has thinned the crowds, but locals assert
+                    the city is safer than you would think.
+                  </div>
+                  <div class="tags mt-3 mb-4">
+                    <a
+                      class="btn rounded-0 px-2 py-0 bg-jungle bg-grey-hover text-md"
+                      href=""
+                      >Travel</a
+                    >
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                  <div class="wrap">
+                    <div>
+                      <a href="#">
+                        <picture class="mapping-mobile lazysize">
+                          <img
+                            class="w-100 mapping-mobile lazysize lazyload img-fluid"
+                            src="img/img-591x364.jpg"
+                            alt="Hong Kong Victoria Harbor"
+                            title="Hong Kong Victoria Harbor"
+                          />
+                        </picture>
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="serif-title">
+                    Lesser-Known Ruins of the Ancient World
+                  </h3>
+                  <div class="summary">
+                    While most everyone is familiar with Angkor Wat, Petra or
+                    Rome's Colosseum, it is sometimes the overlooked cities—once
+                    megalopolises now in disrepair—that tell a more potent
+                    story.
+                  </div>
+                  <div class="tags mt-3 mb-4">
+                    <a
+                      class="btn rounded-0 px-2 py-0 bg-jungle bg-grey-hover text-md"
+                      href=""
+                      >Travel</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <div class="wrap">
+                    <div>
+                      <a href="#">
+                        <picture class="mapping-mobile lazysize">
+                          <img
+                            class="w-100 mapping-mobile lazysize lazyload img-fluid"
+                            src="img/img-591x364.jpg"
+                            alt="Hong Kong Victoria Harbor"
+                            title="Hong Kong Victoria Harbor"
+                          />
+                        </picture>
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="serif-title">
+                    Is It Safe to Travel to Hong Kong During Protests? Here's
+                    What to Consider
+                  </h3>
+                  <div class="summary">
+                    A drop in tourism has thinned the crowds, but locals assert
+                    the city is safer than you would think.
+                  </div>
+                  <div class="tags mt-3 mb-4">
+                    <a
+                      class="btn rounded-0 px-2 py-0 bg-jungle bg-grey-hover text-md"
+                      href=""
+                      >Travel</a
+                    >
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                  <div class="wrap">
+                    <div>
+                      <a href="#">
+                        <picture class="mapping-mobile lazysize">
+                          <img
+                            class="w-100 mapping-mobile lazysize lazyload img-fluid"
+                            src="img/img-591x364.jpg"
+                            alt="Hong Kong Victoria Harbor"
+                            title="Hong Kong Victoria Harbor"
+                          />
+                        </picture>
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="serif-title">
+                    Lesser-Known Ruins of the Ancient World
+                  </h3>
+                  <div class="summary">
+                    While most everyone is familiar with Angkor Wat, Petra or
+                    Rome's Colosseum, it is sometimes the overlooked cities—once
+                    megalopolises now in disrepair—that tell a more potent
+                    story.
+                  </div>
+                  <div class="tags mt-3 mb-4">
+                    <a
+                      class="btn rounded-0 px-2 py-0 bg-jungle bg-grey-hover text-md"
+                      href=""
+                      >Travel</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- end featured stories -->
+
+            <article class="order-2 order-md-3 more-stories mt-sm-5">
+              <div class="block-title text-uppercase">more stories</div>
+              <div class="list px-4">
+                <div class="row pb-3">
+                  <div class="col pt-4">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <!-- end item -->
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col pt-4 border-top">
+                    <img
+                      class="img-fluid img-wrapper float-left mr-4"
+                      src="img/img-397x265.jpg"
+                      alt=""
+                    />
+                    <h3 class="font-weight-bold">
+                      <a class="black-hover" href="#"
+                        >Keystone Pipeline Spills 383,000 Gallons of Oil in
+                        North Dakota</a
+                      >
+                    </h3>
+                    In addition to failing to go through the usual food
+                    inspection processes, the products came from Vietnam—a
+                    country that is not eligible to export poultry products to
+                    the U.S. or any meat products aside from catfish.
+                  </div>
+                </div>
+              </div>
+              <!-- end list -->
+            </article>
+            <!-- end more stories -->
+          </div>
+        </div>
+        <!-- end center section -->
+
+        <div class="col-lg order-3">
+          <div class="list">
+            <div class="block-title text-uppercase">opinion</div>
+            <div class="media py-3">
+              <img class="mr-3" src="./img/avatar-img.png" alt="avatar-list" />
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Baghdadi's Death Does Not Matter</a
+                  >
+                </h3>
+                <p class="mt-2">
+                  <span class="byline font-weight-bold">By Max Abrahms</span>
+                </p>
+              </div>
+            </div>
+            <!-- end item -->
+            <div class="media py-3 border-top">
+              <img class="mr-3" src="./img/avatar-img.png" alt="avatar-list" />
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Baghdadi's Death Does Not Matter</a
+                  >
+                </h3>
+                <p class="mt-2">
+                  <span class="byline font-weight-bold">By Max Abrahms</span>
+                </p>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <img class="mr-3" src="./img/avatar-img.png" alt="avatar-list" />
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Baghdadi's Death Does Not Matter</a
+                  >
+                </h3>
+                <p class="mt-2">
+                  <span class="byline font-weight-bold">By Max Abrahms</span>
+                </p>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <img class="mr-3" src="./img/avatar-img.png" alt="avatar-list" />
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Baghdadi's Death Does Not Matter</a
+                  >
+                </h3>
+                <p class="mt-2">
+                  <span class="byline font-weight-bold">By Max Abrahms</span>
+                </p>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <img class="mr-3" src="./img/avatar-img.png" alt="avatar-list" />
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Baghdadi's Death Does Not Matter</a
+                  >
+                </h3>
+                <p class="mt-2">
+                  <span class="byline font-weight-bold">By Max Abrahms</span>
+                </p>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <img class="mr-3" src="./img/avatar-img.png" alt="avatar-list" />
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Baghdadi's Death Does Not Matter</a
+                  >
+                </h3>
+                <p class="mt-2">
+                  <span class="byline font-weight-bold">By Max Abrahms</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end list -->
+
+          <div class="block-title mt-3 text-uppercase">latest news</div>
+          <div class="list">
+            <div class="media py-3">
+              <div class="image mr-3">
+                <a href="">
+                  <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Keystone Pipeline Spills 383,000 Gallons of Oil in North
+                    Dakota</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <!-- end item -->
+            <div class="media py-3 border-top">
+              <div class="image mr-3">
+                <a href="">
+                  <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Keystone Pipeline Spills 383,000 Gallons of Oil in North
+                    Dakota</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <div class="image mr-3">
+                <a href="">
+                  <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Keystone Pipeline Spills 383,000 Gallons of Oil in North
+                    Dakota</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <div class="image mr-3">
+                <a href="">
+                  <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Keystone Pipeline Spills 383,000 Gallons of Oil in North
+                    Dakota</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <div class="image mr-3">
+                <a href="">
+                  <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Keystone Pipeline Spills 383,000 Gallons of Oil in North
+                    Dakota</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <div class="image mr-3">
+                <a href="">
+                  <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Keystone Pipeline Spills 383,000 Gallons of Oil in North
+                    Dakota</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="media py-3 border-top">
+              <div class="image mr-3">
+                <a href="">
+                  <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h3 class="font-weight-bold">
+                  <a class="red-hover" href="#"
+                    >Keystone Pipeline Spills 383,000 Gallons of Oil in North
+                    Dakota</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- end list -->
+
+          <div class="row justify-content-md-center">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-12 col-xl-12">
+              <article class="my-5">
+                <h3 class="pl-3 text-uppercase category-title font-weight-bold">
+                  sponsored insight
+                </h3>
+                <div class="card p-2 pt-3">
+                  <div class="card-body">
+                    <h2>
+                      <a class="font-weight-bold" href="#">EQUIS Accredited Business Schools 2019</a>
+                    </h2>
+                    <p class="">
+                      It is important to check whether a school is accredited by
+                      a credible global accreditation body and meets
+                      internationally agreed quality standards. EQUIS gives you
+                      that piece of mind.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12 col-xl-12">
+              <article
+                class="card justify-content-lg-center mx-xl-4 p-3 bg-light"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-2">
+                      <span class="icon-n"></span>
+                    </div>
+                    <div class="col-10">
+                      <h3 class="text-uppercase font-weight-bold">
+                        sign up for our<br />
+                        newsletter
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button
+                        class="btn btn-text rounded-0 bg-secondary pl-3 pr-5"
+                      >
+                        <span class="text-uppercase font-weight-bold"
+                          >sign up</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col block-title text-dark font-weight-bold">
+                      Update your preferences »
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <article class="my-5">
+            <h3 class="pl-3 text-uppercase category-title font-weight-bold">
+              sponsored insight
+            </h3>
+            <div class="card p-2 pt-3">
+              <div class="card-body">
+                <h2>
+                  <a class="font-weight-bold" href="#">
+                    EQUIS Accredited Business Schools 2019
+                  </a>
+                </h2>
+                <p class="">
+                  It is important to check whether a school is accredited by a
+                  credible global accreditation body and meets internationally
+                  agreed quality standards. equis gives you that piece of mind.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- end section news-->
+
+      <section class="magazine-box mt-5">
+        <div class="row">
+          <div class="pt-4 pb-sm-4 col-md-3 col-sm-12">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/cov-magazine-large.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">november 15 issue</a>
+              </div>
+            </div>
+            <a class="btn btn-lg btn-block btn-light text-uppercase font-weight-bold btn-feature border-0 rounded-0" href="">
+              see all features
+              <svg
+                class="ml-3 d-none d-md-inline-block"
+                width="10px"
+                height="20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 8 14"
+                style="enable-background:new 0 0 8 14;fill: black;"
+                xml:space="preserve"
+              >
+                <polygon
+                  points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7"
+                ></polygon>
+              </svg>
+            </a>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            <div class="mb-4 mb-md-3 text-uppercase d-flex justify-content-center align-items-center">
+              <i class="icon-n"></i><span class="n-title">in the magazine</span>
+            </div>
+            <div class="mb-4 border-bottom d-none d-md-block"></div>
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <img class="mb-3 img-fluid mag-img w-100" src="img/fe-smartcities-medellin.jpg" alt="" />
+                <div class="mb-3 cat-block">
+                  <span class="mag-cat text-uppercase">cover</span>
+                  <span class="cat">
+                    <a class="text-uppercase" href="">world</a>
+                  </span>
+                </div>
+                <h2>
+                  <a class="font-weight-bold" href="">
+                    How Medellín, Colombia, Became the World's Smartest City
+                  </a>
+                </h2>
+              </div>
+              <!-- end col -->
+              <div class="col-md-4 col-sm-12">
+                <img class="mb-3 img-fluid mag-img w-100" src="img/fe-smartcities-medellin.jpg" alt="" />
+                <div class="mb-3 cat-block">
+                  <span class="mag-cat text-uppercase">cover</span>
+                  <span class="cat">
+                    <a class="text-uppercase" href="">world</a>
+                  </span>
+                </div>
+                <h2>
+                  <a class="font-weight-bold" href="">
+                    How Medellín, Colombia, Became the World's Smartest City
+                  </a>
+                </h2>
+              </div>
+              <!-- end col -->
+              <div class="col-md-4 col-sm-12">
+                <img class="mb-3 img-fluid mag-img w-100" src="img/fe-smartcities-medellin.jpg" alt="" />
+                <div class="mb-3 cat-block">
+                  <span class="mag-cat text-uppercase">cover</span>
+                  <span class="cat">
+                    <a class="text-uppercase" href="">world</a>
+                  </span>
+                </div>
+                <h2>
+                  <a class="font-weight-bold" href="">
+                    How Medellín, Colombia, Became the World's Smartest City
+                  </a>
+                </h2>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <img class="mb-3 img-fluid mag-img w-100" src="img/fe-smartcities-medellin.jpg" alt="" />
+            <div class="mb-3 cat-block">
+              <span class="mag-cat text-uppercase">cover</span>
+              <span class="cat">
+                <a class="text-uppercase" href="">world</a>
+              </span>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                How Medellín, Colombia, Became the World's Smartest City
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-md-3 col-sm-12">
+            <img class="mb-3 img-fluid mag-img w-100" src="img/fe-smartcities-medellin.jpg" alt="" />
+            <div class="mb-3 cat-block">
+              <span class="mag-cat text-uppercase">cover</span>
+              <span class="cat">
+                <a class="text-uppercase" href="">world</a>
+              </span>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                How Medellín, Colombia, Became the World's Smartest City
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-md-3 col-sm-12">
+            <img class="mb-3 img-fluid mag-img w-100" src="img/fe-smartcities-medellin.jpg" alt="" />
+            <div class="mb-3 cat-block">
+              <span class="mag-cat text-uppercase">cover</span>
+              <span class="cat">
+                <a class="text-uppercase" href="">world</a>
+              </span>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                How Medellín, Colombia, Became the World's Smartest City
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-md-3 col-sm-12">
+            <img class="mb-3 img-fluid mag-img w-100" src="img/fe-smartcities-medellin.jpg" alt="" />
+            <div class="mb-3 cat-block">
+              <span class="mag-cat text-uppercase">cover</span>
+              <span class="cat">
+                <a class="text-uppercase" href="">world</a>
+              </span>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                How Medellín, Colombia, Became the World's Smartest City
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+        </div>
+      </section>
+
+      <section class="editor_pick mt-5">
+        <h2 class="text-uppercase d-flex justify-content-center align-items-center">
+          <i class="icon-n"></i><span class="n-title">editor's pick</span>
+        </h2>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">world</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Mickey Mouse Birthday in Pictures: How He Has Evolved Over 91 Years
+              </a>
+            </h2>
+            <p>
+              Disney's most famous character has had a number of image changes across nine decades as he has gone from black and white to colour to CGI.
+            </p>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">world</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Mickey Mouse Birthday in Pictures: How He Has Evolved Over 91 Years
+              </a>
+            </h2>
+            <p>
+              Disney's most famous character has had a number of image changes across nine decades as he has gone from black and white to colour to CGI.
+            </p>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">world</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Mickey Mouse Birthday in Pictures: How He Has Evolved Over 91 Years
+              </a>
+            </h2>
+            <p>
+              Disney's most famous character has had a number of image changes across nine decades as he has gone from black and white to colour to CGI.
+            </p>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">world</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Mickey Mouse Birthday in Pictures: How He Has Evolved Over 91 Years
+              </a>
+            </h2>
+            <p>
+              Disney's most famous character has had a number of image changes across nine decades as he has gone from black and white to colour to CGI.
+            </p>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">world</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Mickey Mouse Birthday in Pictures: How He Has Evolved Over 91 Years
+              </a>
+            </h2>
+            <p>
+              Disney's most famous character has had a number of image changes across nine decades as he has gone from black and white to colour to CGI.
+            </p>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">world</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Mickey Mouse Birthday in Pictures: How He Has Evolved Over 91 Years
+              </a>
+            </h2>
+            <p>
+              Disney's most famous character has had a number of image changes across nine decades as he has gone from black and white to colour to CGI.
+            </p>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">world</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Mickey Mouse Birthday in Pictures: How He Has Evolved Over 91 Years
+              </a>
+            </h2>
+            <p>
+              Disney's most famous character has had a number of image changes across nine decades as he has gone from black and white to colour to CGI.
+            </p>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="position-relative w-100">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a href="">world</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Mickey Mouse Birthday in Pictures: How He Has Evolved Over 91 Years
+              </a>
+            </h2>
+            <p>
+              Disney's most famous character has had a number of image changes across nine decades as he has gone from black and white to colour to CGI.
+            </p>
+          </div>
+          <!-- end col -->
+        </div>
+      </section>
+
+      <section class="featured-slideshows mt-5">
+        <h2 class="text-uppercase d-flex justify-content-center align-items-center">
+          <i class="icon-s"></i><span class="n-title">featured slideshows</span>
+        </h2>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a class="count-link" href="">25</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Cruise the Galapagos While Conserving Wildlife Found Nowhere Else
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a class="count-link" href="">25</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Cruise the Galapagos While Conserving Wildlife Found Nowhere Else
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a class="count-link" href="">25</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Cruise the Galapagos While Conserving Wildlife Found Nowhere Else
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a class="count-link" href="">25</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Cruise the Galapagos While Conserving Wildlife Found Nowhere Else
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a class="count-link" href="">25</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Cruise the Galapagos While Conserving Wildlife Found Nowhere Else
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+              <div class="category">
+                <a class="count-link" href="">25</a>
+              </div>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                Cruise the Galapagos While Conserving Wildlife Found Nowhere Else
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </section>
+      <section class="categories">
+        <hr class="my-4">
+        <h2 class="text-capitalize">
+          <a class="font-weight-bold red-title" href="">business</a>
+        </h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="list">
+              <div class="media pb-3">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <!-- end item -->
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- end list -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <hr class="my-4">
+        <h2 class="text-uppercase">
+          <a class="font-weight-bold red-title" href="">u. s.</a>
+        </h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="list">
+              <div class="media pb-3">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <!-- end item -->
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- end list -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <hr class="my-4">
+        <h2 class="text-capitalize">
+          <a class="font-weight-bold red-title" href="">world</a>
+        </h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="list">
+              <div class="media pb-3">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <!-- end item -->
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- end list -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <hr class="my-4">
+        <h2 class="text-capitalize">
+          <a class="font-weight-bold red-title" href="">tech & science</a>
+        </h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="list">
+              <div class="media pb-3">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <!-- end item -->
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- end list -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <hr class="my-4">
+        <h2 class="font-weight-bold red-title text-capitalize">culture</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="list">
+              <div class="media pb-3">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <!-- end item -->
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- end list -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <hr class="my-4">
+        <h2 class="font-weight-bold red-title text-capitalize">sports</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="position-relative w-100 mb-3">
+              <a href="">
+                <img class="img-fluid w-100" src="img/ice.jpg" alt="">
+              </a>
+            </div>
+            <h2>
+              <a class="font-weight-bold" href="">
+                FOX Trademarks 'OK Boomer,' but Can You Own a Meme?
+              </a>
+            </h2>
+          </div>
+          <!-- end col -->
+          <div class="col-xs-12 col-md-4">
+            <div class="list">
+              <div class="media pb-3">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <!-- end item -->
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <div class="media py-3 border-top">
+                <div class="image mr-3">
+                  <a href="">
+                    <img class="w-100" src="img/img-397x265.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h3 class="font-weight-bold">
+                    <a class="red-hover" href="#">
+                      Keystone Pipeline Spills 383,000 Gallons of Oil in North Dakota
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- end list -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </section>
+    </main>
+    <footer class="footer bg-white mt-1 py-5 px-5">
+      <div class="row px-4">
+        <div class="col-xs-12 col-lg-8 mb-4">
+          <h3 class="font-weight-bold red-title text-uppercase">subscribe</h3>
+          <div class="row bg-light p-5">
+            <div class="col-5">
+              <div class="subs-img"></div>
+            </div>
+            <div class="col-7 mt-5 pt-5">
+              <h2 class="font-weight-bold">
+                In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+              </h2>
+              <p class="my-5">
+              All Access + Weekly Delivery.<br>
+              Choose A Membership That's Perfect for You!
+              </p>
+              <button class="btn btn-text rounded-0 bg-scarlet px-3 text-uppercase font-weight-bold">
+                subscribe
+                <svg
+                  class="ml-3 d-none d-md-inline-block"
+                  width="10px"
+                  height="20"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 8 14"
+                  style="enable-background:new 0 0 8 14;fill: white;"
+                  xml:space="preserve">
+                  <polygon
+                    points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7"
+                  ></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end row -->
+        <div class="col-xs-12 col-lg-4">
+          <h3 class="font-weight-bold red-title text-uppercase">newsletter</h3>
+          <div class="row">
+            <div class="image col-xs-12 col-sm-3 col-lg-6">
+            </div>
+            <div class="p-5 h-100 col-xs-12 col-sm-9 col-lg-6 info border">
+              <h2 class="font-weight-bold">The Starting 5</h2>
+              <p>Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
+              <button class="btn btn-text rounded-0 bg-scarlet px-3 text-uppercase font-weight-bold">
+                sign up
+                <svg
+                  class="ml-3 d-none d-md-inline-block"
+                  width="10px"
+                  height="20"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 8 14"
+                  style="enable-background:new 0 0 8 14;fill: white;"
+                  xml:space="preserve">
+                  <polygon
+                    points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7"
+                  ></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+      <hr class="my-5">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-lg-6 d-flex flex-column flex-md-row justify-content-start align-items-md-end">
+          <a class="brand-footer" href="#">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 395.6 60"
+              xml:space="preserve">
+              <path
+                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+              ></path>
+            </svg>
+          </a>
+          <span class="pl-md-1 py-2 p-md-0">© 2019 Newsweek</span>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-6 d-flex align-items-end justify-content-start justify-content-md-end">
+          <ul class="m-0 p-0 d-flex" style="list-style-type:none">
+            <li class="pr-3">
+              <a class="nav-item" href="https://www.facebook.com/Newsweek" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 19" class="social-icon-svg" style="fill: #666666;"><title>linkedin</title><path d="M18 0H1.46C.648 0 0 .633 0 1.372v16.256C0 18.367.649 19 1.46 19h16.594c.81 0 1.46-.633 1.46-1.372V1.372C19.459.633 18.81 0 18 0zM5.784 16.203h-2.92V7.125H5.73v9.078h.054zM4.324 5.858c-.919 0-1.675-.739-1.675-1.636 0-.897.756-1.583 1.675-1.583.92 0 1.676.739 1.676 1.636 0 .897-.757 1.583-1.676 1.583zm12.27 10.345H13.73v-4.434c0-1.055 0-2.427-1.514-2.427-1.513 0-1.73 1.16-1.73 2.322v4.486H7.568V7.125h2.756v1.214h.054c.379-.739 1.352-1.478 2.757-1.478 2.92 0 3.46 1.9 3.46 4.328v5.014z"></path></svg>
+              </a>
+            </li>
+            <li class="pr-3">
+              <a class="" href="https://twitter.com/Newsweek" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 16" class="social-icon-svg" style="fill: #666666;"><title>twitter</title><path d="M19.5 1.894a7.553 7.553 0 0 1-2.238.636A4.024 4.024 0 0 0 18.976.296a7.63 7.63 0 0 1-2.477.979A3.826 3.826 0 0 0 13.654 0c-2.151 0-3.897 1.809-3.897 4.039 0 .317.034.624.1.92C6.619 4.79 3.748 3.184 1.824.737a4.146 4.146 0 0 0-.528 2.033c0 1.4.688 2.637 1.734 3.362a3.797 3.797 0 0 1-1.766-.504v.05c0 1.957 1.344 3.59 3.128 3.96a3.68 3.68 0 0 1-1.027.142c-.251 0-.496-.024-.734-.071.496 1.604 1.935 2.772 3.641 2.803A7.648 7.648 0 0 1 .5 14.187 10.772 10.772 0 0 0 6.475 16c7.171 0 11.091-6.154 11.091-11.492 0-.175-.003-.351-.01-.523a8.05 8.05 0 0 0 1.944-2.09" fill-rule="evenodd"></path></svg>
+              </a>
+            </li>
+            <li class="pr-3">
+              <a class="" href="https://instagram.com/newsweek/" rel="nofollow" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 19" class="social-icon-svg" style="fill: #666666;"><title>linkedin</title><path d="M18 0H1.46C.648 0 0 .633 0 1.372v16.256C0 18.367.649 19 1.46 19h16.594c.81 0 1.46-.633 1.46-1.372V1.372C19.459.633 18.81 0 18 0zM5.784 16.203h-2.92V7.125H5.73v9.078h.054zM4.324 5.858c-.919 0-1.675-.739-1.675-1.636 0-.897.756-1.583 1.675-1.583.92 0 1.676.739 1.676 1.636 0 .897-.757 1.583-1.676 1.583zm12.27 10.345H13.73v-4.434c0-1.055 0-2.427-1.514-2.427-1.513 0-1.73 1.16-1.73 2.322v4.486H7.568V7.125h2.756v1.214h.054c.379-.739 1.352-1.478 2.757-1.478 2.92 0 3.46 1.9 3.46 4.328v5.014z"></path></svg>
+              </a>
+            </li>
+            <li class="pr-3">
+              <a class="" href="https://newsweekscience.tumblr.com/" rel="nofollow" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 16" class="social-icon-svg" style="fill: #666666;"><title>twitter</title><path d="M19.5 1.894a7.553 7.553 0 0 1-2.238.636A4.024 4.024 0 0 0 18.976.296a7.63 7.63 0 0 1-2.477.979A3.826 3.826 0 0 0 13.654 0c-2.151 0-3.897 1.809-3.897 4.039 0 .317.034.624.1.92C6.619 4.79 3.748 3.184 1.824.737a4.146 4.146 0 0 0-.528 2.033c0 1.4.688 2.637 1.734 3.362a3.797 3.797 0 0 1-1.766-.504v.05c0 1.957 1.344 3.59 3.128 3.96a3.68 3.68 0 0 1-1.027.142c-.251 0-.496-.024-.734-.071.496 1.604 1.935 2.772 3.641 2.803A7.648 7.648 0 0 1 .5 14.187 10.772 10.772 0 0 0 6.475 16c7.171 0 11.091-6.154 11.091-11.492 0-.175-.003-.351-.01-.523a8.05 8.05 0 0 0 1.944-2.09" fill-rule="evenodd"></path></svg>
+              </a>
+            </li>
+            <li>
+              <a class="" href="https://www.linkedin.com/company/newsweek" rel="nofollow" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 19" class="social-icon-svg" style="fill: #666666;"><title>linkedin</title><path d="M18 0H1.46C.648 0 0 .633 0 1.372v16.256C0 18.367.649 19 1.46 19h16.594c.81 0 1.46-.633 1.46-1.372V1.372C19.459.633 18.81 0 18 0zM5.784 16.203h-2.92V7.125H5.73v9.078h.054zM4.324 5.858c-.919 0-1.675-.739-1.675-1.636 0-.897.756-1.583 1.675-1.583.92 0 1.676.739 1.676 1.636 0 .897-.757 1.583-1.676 1.583zm12.27 10.345H13.73v-4.434c0-1.055 0-2.427-1.514-2.427-1.513 0-1.73 1.16-1.73 2.322v4.486H7.568V7.125h2.756v1.214h.054c.379-.739 1.352-1.478 2.757-1.478 2.92 0 3.46 1.9 3.46 4.328v5.014z"></path></svg>              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end doc -->
+      <hr>
+      <div class="row">
+        <div class="col-xs-12 col-lg-6">
+          <nav class="">
+            <a href="">About Us</a>
+            <a href="">Corrections</a>
+            <a href="">Contant Us</a>
+            <a href="">Editorial Guidelines</a>
+            <a href="">Advertise</a>
+            <a href="">Copyright</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Terms of Sale</a>
+            <a href="">Archive</a>
+            <a href="">Announcements</a>
+            <a href="">Consent preference</a>
+          </nav>
+        </div>
+        <div class="col-xs-12 col-lg-6 d-flex justify-content-start justify-content-lg-end">
+          <nav>
+            <span class="font-weight-bold">Editions:</span>
+            <a href="">U.s. Edition</a>
+            <a href="">日本</a>
+            <a href="">한국</a>
+            <a href="">Pakistan</a>
+            <a href="">Polska</a>
+            <a href="">România</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- optional javascript -->
+    <!-- jquery first, then popper.js, then bootstrap js -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/x+965dzo0rt7abk41jstqiaqvgrvzpbzo5smxkp4yfrvh+8abtte1pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-uo2et0cphqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
